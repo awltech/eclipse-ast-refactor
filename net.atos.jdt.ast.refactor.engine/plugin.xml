@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="ASTRefactorRules" name="ASTRefactorRules" schema="schema/ASTRefactorRules.exsd"/>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            category="org.eclipse.jdt.ui.preferences.JavaBasePreferencePage"
+            class="net.atos.jdt.ast.refactor.engine.internal.extpt.ui.RulesExtensionPointPreferencePage"
+            id="net.atos.jdt.ast.validation.engine.rulesPage"
+            name="AST Refactoring">
+      </page>
+   </extension>
+
+</plugin>
